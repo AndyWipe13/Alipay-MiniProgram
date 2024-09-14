@@ -10,4 +10,5 @@
 
 ### 本地自测方式
 
-下载支付宝小程序开发者IDE：https://opendocs.alipay.com/mini/ide/download，打开该项目，需要链接支付宝用户以及小程序主体，将cloud目录下的函数全部上传至云端，数据库以及OSS对象存储文件自行设计与上传，处理完成后，可以在本地IDE或者真机调试测试运行。
+下载支付宝小程序开发者IDE：https://opendocs.alipay.com/mini/ide/download
+打开该项目，需要链接支付宝用户以及小程序主体，将cloud目录下的函数全部上传至云端，数据库以及OSS对象存储文件自行设计与上传，处理完成后，可以在本地IDE或者真机调试测试运行。
