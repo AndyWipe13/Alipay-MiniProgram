@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "modal": "antd-mini/es/Modal/index",
+    "stepper":"antd-mini/es/Stepper/index",
+    "icon": "antd-mini/es/Icon/index",
+    "container": "antd-mini/es/Container/index"
+  },
+  "styleIsolation": "shared",
+  "defaultTitle": "购物车",
+  "pullRefresh": true,
+  "allowsBounceVertical": "YES"
+}

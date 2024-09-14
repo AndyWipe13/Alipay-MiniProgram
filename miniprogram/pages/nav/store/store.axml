@@ -1,0 +1,118 @@
+<view class="recommendImgs">
+  <swiper
+    style="height:420rpx"
+    indicator-dots="{{true}}"
+    autoplay="{{true}}"
+    vertical="{{false}}"
+    interval="{{2500}}"
+    indicator-active-color="#563630"
+    circular="{{true}}"
+    duration="{{1400}}">
+    <swiper-item a:for="{{background}}" a:for-item="item" a:if="{{ index>5 }}">
+      <image mode="aspectFill" class="img-style" src="{{item}}" onTap="navigateToProdInfo" data-pId="{{pIdList[index]}}"/>
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class="banner">
+  <view class="search-input">
+    <ant-input
+      placeholder="搜索你感兴趣的商品吧"
+      onChange="handleSeach"
+      className="search-bar"
+      focusClassName="search-bar-focus"
+      confirm-type="search"
+      onConfirm="goSearch"
+      allowClear="true"
+      value = "{{searchValue}}">
+      <icon slot="suffix" type="SearchOutline"/>
+    </ant-input>
+  </view>
+</view>
+
+<view class="zone">
+  <view class="zone-banner">
+    <view style="font-size: 30rpx; font-weight: bolder;">
+      最新商品
+    </view>
+    <!-- <view style="font-size:26rpx;padding-top:10rpx;">
+      -- 人生得意须尽欢，莫使金樽空对月 --
+    </view> -->
+  </view>
+  <view style="padding:0 30rpx 30rpx 30rpx">
+    <view class="zone-new">
+      <view>
+        <image mode="scaleToFill" src="{{array[0].info_pic}}" class="zone-new-image"/>
+      </view>
+      <view class="productInf">
+        <view class="productType">
+          {{typeName1}}
+        </view>
+        <view>
+          {{array[0].pName}}
+        </view>
+        <view>
+          ￥{{array[0].price}}
+        </view>
+        <view style="font-size:14px" data-pId="{{array[0].pId}}" onTap="navigateToProdInfo">
+          去看看<icon type="RightOutline"/>
+        </view>
+      </view>
+    </view>
+    <view class="zone-new" style="margin-top:40rpx">
+      <view class="productInf">
+        <view class="productType">
+          {{typeName2}}
+        </view>
+        <view>
+          {{array[1].pName}}
+        </view>
+        <view>
+          ￥{{array[1].price}}
+        </view>
+        <view style="font-size:14px" data-pId="{{array[1].pId}}" onTap="navigateToProdInfo">
+          去看看<icon type="RightOutline"  />
+        </view>
+      </view>
+      <view>
+        <image mode="scaleToFill" src="{{array[1].info_pic}}" class="zone-new-image"/>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="allProd">
+  <view class="product" onTap="navigateToProdInfo" data-pId='{{item.pId}}' a:for="{{array}}" a:for-item="item" a:if="{{ index>1&&index<8 }}">
+    <image mode="scaleToFill" src="{{item.info_pic}}" class="prod-pic" lazy-load ='true'/>
+    <view class="pName">
+      {{item.pName}}
+    </view>
+    <view style="margin-top:10rpx">
+      <text style=" margin-left:10rpx;font-weight:600">￥{{item.price}}</text>
+      <image mode="scaleToFill" src="{{cartIco}}" class="cart-icon" lazy-load ='true'/>
+    </view>
+  </view>
+  <view style="text-align:center;font-size:14px;color:#A9A9A9;width:100%" onTap="goAllProd">
+    全部商品<icon type="RightOutline"/>
+  </view>
+</view>
+
+<view a:for="{{ productType }}" a:for-item="item" class="zone" onTap="goType" data-index={{index}}>
+  <view class="zone-banner">
+    <view style="font-size: 30rpx; font-weight: bolder;">
+      {{item.name}}
+    </view>
+    <view style="font-size:22rpx;padding-top:10rpx;color:#a6a6a6">
+      —— 了解更多 ——
+    </view>
+  </view>
+  <image style="width:100%;" src="{{background[index]}}"/>
+</view>
+
+<toast
+  content="暂无相关商品，试试其他关键字吧"
+  visible="{{hasProducts}}"
+  duration="{{2000}}"
+  showMask="{{false}}"
+  maskCloseable="{{true}}"
+  className="toast"/>

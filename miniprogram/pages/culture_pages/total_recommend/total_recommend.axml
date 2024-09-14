@@ -1,0 +1,7 @@
+<view class="page">
+  <view a:for="{{array}}" a:for-index="idx" a:for-item="itemName">
+    <wonderful-section title="{{itemName.title}}" imageUrl="{{itemName.page}}"
+     width="{{itemName.width}}" height="{{itemName.height}}"
+     dataIndex="{{idx}}"></wonderful-section>
+  </view>
+</view>

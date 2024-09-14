@@ -1,0 +1,19 @@
+<view class="product-display">
+  <view class="product" onTap="navigateToProdInfo" a:if={{ifShow1}} data-pId='{{pId1}}'>
+    <image mode="scaleToFill" src="{{prodPic1}}" class="prod-pic" lazy-load ='true'/>
+    <view class="p-name">
+      <text>{{pName1}}</text>
+    </view>
+    <text style=" margin-left:25rpx;font-weight:600">￥{{price1}}</text>
+    <image mode="scaleToFill" src="{{cartIco1}}" class="cart-icon" lazy-load ='true'/>
+  </view>
+
+  <view class="product" a:if="{{ ifShow2 }}" onTap="navigateToProdInfo" data-pId='{{pId2}}'>
+    <image mode="scaleToFill" src="{{prodPic2}}" class="prod-pic" lazy-load ='true'/>
+    <view class="p-name">
+      <text>{{pName2}}</text>
+    </view>
+    <text style="margin-left:25rpx;font-weight:600">￥{{price2}}</text>
+    <image mode="scaleToFill" src="{{cartIco2}}" class="cart-icon" lazy-load ='true'/>
+  </view>
+</view>

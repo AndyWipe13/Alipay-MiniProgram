@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "swipe-action": "antd-mini/es/SwipeAction/index"
+  },
+  "styleIsolation": "apply-shared",
+  "defaultTitle": "我的收藏",
+  "pullRefresh": true,
+  "allowsBounceVertical": "YES"
+}

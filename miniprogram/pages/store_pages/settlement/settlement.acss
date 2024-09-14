@@ -1,0 +1,100 @@
+.address{
+  border: 1rpx solid #bdbdbd91;
+  background-color: #ffffff;
+  border-radius: 20rpx;
+}
+.noneAddress{
+  width: 50%;
+  height: 37rpx;
+  padding: 22rpx 0 0 47rpx;
+  font-size: 30rpx;
+  color: #96969691;
+}
+
+.gotAddress{
+  width: 50%;
+  height: 37rpx;
+  padding: 22rpx 0 0 47rpx;
+  font-size: 30rpx;
+  color:#00000091
+}
+.main{
+  width: 100%;
+  border: 1rpx solid #bdbdbd91;
+  border-radius: 20rpx;
+  height: 340rpx;
+  background-color: #ffffff;
+  margin-top: 25rpx;
+}
+.prod-inf{
+  width: 100%;
+  height: 260rpx;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.img{
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+.txt{
+  display: flex;
+  flex-direction:column;
+  width: 35%;
+}
+.comp{
+  width: 28%;
+}
+.prod-price{
+  width: 94%;
+  padding: 20rpx;
+}
+
+.completePay{
+  position:fixed;
+  bottom: 0px;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding-bottom: 40rpx;
+}
+
+.price{
+  width: 430rpx;
+  padding-left: 40rpx;
+}
+.emitPay{
+  width: 220rpx;
+  height: 80rpx;
+  border-radius: 50px;
+  margin-left: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #BFA66D;
+  color: #ffffff;
+}
+
+.calculate{
+  width: 100%;
+  border: 1rpx solid #bdbdbd91;
+  border-radius: 20rpx;
+  background-color: #ffffff;
+  margin-top: 25rpx;
+  height: 260rpx;
+}
+
+.banner{
+  height: 35rpx;
+  width: 94%;
+  padding: 18rpx;
+}

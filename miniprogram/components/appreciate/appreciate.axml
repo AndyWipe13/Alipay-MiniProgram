@@ -1,0 +1,10 @@
+<view class="row">
+  <view class="section5-item">
+    <image class="section5-image"  src="{{imageUrl1}}"
+     data-index="{{dataIndex}}" onTap="onImageSection" mode="aspectFill" />
+  </view>
+  <view class="section5-item">
+    <image class="section5-image"  src="{{imageUrl2}}" 
+    data-index="{{dataIndex+1}}" onTap="onImageSection" mode="aspectFill" />
+  </view>
+</view>

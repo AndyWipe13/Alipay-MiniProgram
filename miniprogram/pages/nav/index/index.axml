@@ -1,0 +1,149 @@
+<view>
+  <view class="header" style="background-image:url('{{background[0]}}')">
+    <!-- <view class="header-main">
+      <image mode="scaleToFill" src="/image/musicIcon.png" style="width:70rpx;height:70rpx"/>
+    </view> -->
+  </view>
+
+  <view class="function-icons">
+    <view a:for="{{ icons }}" a:for-item="icon" style="width:20%" onTap="onImageSection2" data-index="{{index}}">
+      <view class="iconItem">
+        <image mode="scaleToFill" src="{{icon.src}}"/>
+      </view>
+      <view class="iconTitle">
+        {{icon.title}}
+      </view>
+    </view>
+  </view>
+
+
+  <view class="iconView" animation="{{animation}}" onTap="funcRotate">
+  <image class="icon" src="/image/musicIcon.png"></image>
+  </view>
+
+
+  <view style="padding:10rpx 20rpx 10rpx 20rpx">
+    <view class="AI-section">
+      <view class="AI-column">
+        <view style="font-size:20px;color:#563630;font-weight:700">
+          AI历史文化顾问
+        </view>
+        <view style="width:360rpx;color:#a3a3a3">
+          与AI对话，从不一样的角度看历史传统文化
+        </view>
+        <view class="goChat" onTap="goChat">
+          点我开始 <icon type="RightOutline"/>
+        </view>
+      </view>
+      <view style="margin-left:20rpx">
+        <image mode="scaleToFill" src="{{background[1]}}" style="width:230rpx;height:275rpx"/>
+      </view>
+    </view>
+  </view>
+
+  <view class="main-section">
+    <view class="appreciate-section">
+      <view class="appreciate-header">
+        <view class="header-title">
+          鉴赏之旅
+        </view>
+        <view class="more" onTap="appreciateMore">
+          <view class="dot" style="background:#E3E2CE">
+          </view>
+          <view class="dot" style="margin-left:20rpx;background:#BA9658">
+          </view>
+          <icon type="RightOutline"/>
+        </view>
+      </view>
+      
+      <swiper
+        indicator-dots="{{false}}"
+        autoplay="{{false}}"
+        vertical="{{false}}"
+        circular="{{false}}"
+        next-margin="10rpx"
+        style="width:100%"
+        >
+        <swiper-item>
+          <view class="appreciate-images">
+            <view class="appreciate-image" a:for="{{ancientArray}}" a:for-item="imageItem" a:if="{{ index<4 }}">
+              <image mode="aspectFill" class="imageItem" onTap="onImageSection3" data-index="{{index}}" src="{{imageItem.img}}"/>
+              <view>
+                {{imageItem.title}}
+              </view>
+              <view style="font-size:14px;color:#ccc;margin-top:5rpx">
+                {{imageItem.type}}
+              </view>
+            </view>
+          </view>
+        </swiper-item>
+        <swiper-item>
+          <view class="appreciate-images">
+            <view class="appreciate-image" a:for="{{ancientArray}}" a:for-item="imageItem" a:if="{{ index>=4 }}">
+              <image mode="aspectFill" class="imageItem" onTap="onImageSection3" data-index="{{index}}" src="{{imageItem.img}}"/>
+              <view>
+                {{imageItem.title}}
+              </view>
+              <view style="font-size:14px;color:#ccc;margin-top:5rpx">
+                {{imageItem.type}}
+              </view>
+            </view>
+          </view>
+        </swiper-item>
+      </swiper>
+    </view>
+
+    <view class="video-section">
+      <view class="video-header">
+        <view class="header-title">
+          精彩推荐
+        </view>
+        <view class="more" onTap="wonderfulMore">
+          <view class="dot" style="background:#E3E2CE">
+          </view>
+          <view class="dot" style="margin-left:20rpx;background:#BA9658">
+          </view>
+          <icon type="RightOutline"/>
+        </view>
+      </view>
+      <scroll-view  class="video-images" scroll-x="{{true}}">
+        <view class="video-main" a:for="{{wonderful}}" a:for-item="videoItem" a:if="{{ index<2 }}">
+          <view class="video-image">
+            <image mode="aspectFill" class="videoItem" onTap="onImageSection4" data-index="{{index}}" src="{{videoItem.page}}"/>
+            <view class="video-title">
+              {{videoItem.title}}
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+
+    <view class="blog-section">
+      <view class="blog-title">
+        每日精选
+      </view>
+      <view class="blog-item" a:for="{{ charm }}" onTap="onImageSection5" data-index="{{index}}">
+        <view style="display:flex">
+        <view style="width:7%;padding-top:10rpx" >
+          <text style="font-weight:bolder;font-size:55rpx;color:#E77B37;font-family:'myFont1'">{{index+1}}</text>
+        </view>
+        <view style="width:93%">
+        <view style="display:flex">
+          <view class="info-left" style="font-weight:600;font-size:33rpx;padding:10rpx;padding-top:18rpx">
+            {{charm[index].title}}
+          </view>
+          <view class="blog-images info-right">
+            <image mode="scaleToFill" src="{{charm[index].page}}" />
+          </view>
+        </view>
+        <view style="margin-top:2rpx;display:flex;padding:10rpx">
+          <view style="width:83%;font-size:13px;color:#a6a6a6">
+            了解更多<icon type="RightOutline"/>
+          </view>
+        </view>
+        </view>
+      </view>
+      </view>
+    </view>
+  </view>
+</view>

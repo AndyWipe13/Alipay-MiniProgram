@@ -1,0 +1,69 @@
+.slider {
+  margin-top: 20rpx;
+}
+
+.controller{
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 30px;
+}
+.title{
+  color: #000;
+  width:100%;
+  height:150rpx;
+  align-items:center;
+  justify-content:center;
+  display:flex;
+  font-size:25px;
+  font-weight:700;
+}
+.listTop{
+  width:100%;
+  height:9%;
+  border-bottom:0.5rpx solid #bbbaba;
+  display:flex;
+  align-items:center
+}
+.main{
+  height: 85%;
+  width: 100%;
+  margin-top: 2%;
+}
+.info{
+  width: 85%;
+  padding-left: 30rpx;
+}
+.items{
+  width:100%;
+  height:110rpx;
+  display:flex;
+  align-items:center
+}
+.listToPlay{
+  margin:7% 0 0 6%;
+  border-bottom:1rpx solid black;
+  font-size:16px;
+  font-weight:700;
+  position: relative;
+}
+.albumPhoto{
+  width:100%;
+  height:600rpx;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.song-name{
+  font-size: 50rpx;
+  font-weight: bolder;
+  color: black;
+}
+
+.author-name{
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #5c5c5c;
+}

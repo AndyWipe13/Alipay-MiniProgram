@@ -1,0 +1,128 @@
+page {
+  background-image: url("/image/chat.jpg");
+  background-size: cover; /* 覆盖整个页面 */
+  background-position: center; /* 中心对齐 */
+}
+.chat{
+  width: 98%;
+
+  margin-left: 1%;
+  position: relative;
+  margin-bottom: 10rpx;
+  border-bottom: 4rpx solid  rgb(172,146,110);
+}
+.send{
+  width: 100%;
+  height: auto;
+  display: flex;
+  bottom: 0rpx;
+  background-color:#f7f7f7;
+
+  margin-top: 10rpx;
+}
+.send button{
+  border-radius: 30rpx; 
+  border: 1px solid rgb(172,146,110); /* 深棕色边框 */
+  height: 95rpx;
+  width:13%;
+  align-self: flex-end ;
+  margin-left: 3%;
+  padding: 1rpx;
+
+}
+.send textarea{
+  border-radius: 30rpx; 
+  border: 1px solid rgb(172,146,110); /* 深棕色边框 */
+  overflow: hidden; /* 隐藏溢出内容 */
+  width:530rpx;
+  height: 80rpx;
+  margin-left: 4%;
+  margin-top: 0%;
+  font-size: 38rpx;
+  padding: 20rpx;
+  resize: none; /* 禁止调整大小 */ 
+  align-self: flex-start /* 在flex容器中垂直居中 */
+}
+.tips{
+  width: 93%;
+  height: 250rpx;
+  margin-left: 3%;
+  /* margin-top: 930rpx; */
+  border-radius: 30rpx; 
+} 
+.tips button{
+  background-color:rgba(255,255,255,0.7); /* 古铜色背景 */
+  border: 1px solid rgb(172,146,110); /* 深棕色边框 */
+  color: rgb(172,146,110); /* 白色文字 */
+  font-size: 32rpx; /* 文字大小 */
+  border-radius: 30rpx; /* 圆角边框 */
+  margin-top: 20rpx;
+  margin-left: 35rpx;
+  width: 600rpx;
+  height: 95rpx;
+}
+.message{
+  margin-right:60rpx;
+  margin-left:60rpx;
+  margin-top:1.5%; 
+  font-size: 35rpx; 
+  font-family: Arial; 
+  border: 1px solid rgb(172,146,110);
+  border-radius: 0rpx 50rpx 50rpx 50rpx;
+  display: inline-block;
+   min-width: 15%;
+   max-width: 92%;
+   padding: 20rpx;
+}
+.innerMessage{
+  background-color:rgba(255,255,255,0.5);
+  color:rgb(172,146,110)
+}
+.assistant{
+  font-weight: normal;
+  margin-right:60rpx;
+  margin-left:60rpx;
+  margin-top:1.5%;
+  font-size: 35rpx; 
+  font-family: Arial;
+  background-color:white;
+  border: 1px solid rgb(172,146,110);
+  border-radius: 0rpx 50rpx 50rpx 50rpx; 
+  display: inline-block; 
+  min-width: 15%;
+  max-width: 92%;
+  padding: 20rpx;
+}
+.user{
+  margin-right:60rpx;
+  margin-left:60rpx;
+  margin-top:1.5%;
+  font-size: 35rpx;
+  font-family: Arial;
+  background-color:white;
+  border: 1px solid rgb(172,146,110);
+  border-radius: 50rpx 0rpx 50rpx 50rpx;
+  display: inline-block; 
+  min-width: 10%;
+  max-width: 92%;
+  padding: 20rpx;
+}
+
+.loading{
+  margin-left:60rpx;
+  margin-top:1.5%;
+  font-size: 35rpx;
+  font-family: Arial;
+  background-color:white;
+  border: 1px solid rgb(172,146,110);
+  border-radius: 0rpx 50rpx 50rpx 50rpx;
+  display: inline-block;
+  min-width: 15%;
+  padding: 20rpx;
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}

@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "ant-container": "antd-mini/es/Container/index"
+  },
+  "styleIsolation": "shared",
+  "transparentTitle":"auto",
+  "defaultTitle": "",
+  "titleBarColor": "#000000",
+  "backgroundColor": "#FFFFFF"
+}

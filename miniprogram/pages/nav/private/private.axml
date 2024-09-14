@@ -1,0 +1,96 @@
+<list className="{{controlRegist}}">
+  <list-item
+    imageSize="large"
+    onTap="isRegist"
+    arrow="right"
+  >
+    <view style="padding-left:30rpx">
+      {{nickName}}
+    </view>
+    <button
+      open-type="getAuthorize"
+      scope="userInfo"
+      onGetAuthorize="isRegist"
+      onError="handleAuthError"
+      slot="extra"
+      class="userRegist"
+      style="display:{{registButt}}"
+      >
+      点此授权
+    </button>
+  </list-item>
+</list>
+
+<view class="{{controlInfo}}">
+  <view class="overlay">
+    <avatar src="{{avatar}}" className="avatar"></avatar>
+    <view style="font-weight:600;">{{nickName}}</view>
+  </view>
+</view>
+
+
+<view class="private-main">
+  <container title="我的订单">
+    <view slot="headerRight" onTap="toPayments">
+      <text>全部订单</text>
+      <icon type="RightOutline"/>
+    </view>
+    <grid
+      items="{{items}}"
+      onTap="toPayments"
+      columns="{{3}}" />
+  </container>
+
+  <container headerInBox="{{false}}" style="margin-top:-90rpx">
+    <list>
+      <list-item
+        image="{{myCart}}"
+        arrow="right"
+        onTap="toPrivatePages"
+        data-info="0">
+        购物车
+      </list-item>
+      <list-item
+        image="{{myColl}}"
+        arrow="right"
+        onTap="toPrivatePages"
+        data-info="1">
+        我的收藏
+      </list-item>
+      </list>
+  </container>
+</view>
+
+<toast
+  content="授权成功"
+  visible="{{isRegist1}}"
+  duration="{{2000}}"
+  showMask="{{false}}"
+  maskCloseable="{{true}}"
+  className="toast"/>
+
+<toast
+  content="注册为新用户成功"
+  visible="{{isRegist2}}"
+  duration="{{2000}}"
+  showMask="{{false}}"
+  maskCloseable="{{true}}"
+  className="toast"/>
+
+  <toast
+  content="授权失败"
+  visible="{{registFail}}"
+  duration="{{2000}}"
+  showMask="{{false}}"
+  maskCloseable="{{true}}"
+  className="toast"/>
+
+<toast
+  content="授权中"
+  visible="{{registLoading}}"
+  type="loading"
+  showMask="{{false}}"
+  duration="{{0}}"
+  maskCloseable="{{false}}"
+  className="toast"/>
+

@@ -1,0 +1,134 @@
+<view class="page">
+  <!-- <view style="width:100%">
+    <view class="title1">
+      <view class="title-banner">
+        {{chuanda[0].title}}
+      </view>
+    </view>
+    <ant-tabs items="{{ items1 }}" current="{{ current1 }}" onChange="onChange1" style="width:98%">
+      <swiper
+        current="{{ current1 }}"
+        autoplay="{{ false }}"
+        vertical="{{ false }}"
+        circular="{{ false }}"
+        onChange="onSwipeChange1">
+        <block
+          a:for="{{ items1 }}"
+          a:for-index="index"
+          a:for-item="item"
+          a:key="{{ index }}">
+          <swiper-item>
+            <view class="content1">
+              <view class="costume-img">
+                <image mode="widthFix" style="width:90%;margin-top:20rpx" src="{{item.src}}"/>
+              </view>
+              <scroll-view scroll-y="true" class="info">
+                <view>
+                  服装特点：唐朝形制华贵大气，色彩俏丽。服饰有精美的印花/刺绣做点缀，绮丽锦绣
+                </view>
+                <view>
+                  齐胸衫裙特点:由上衣和下裙组成。上衣的设计注重突出胸部线条。裙子的裙腰束在胸上裙身飘逸灵动适合：对身高几乎没有要求，齐胸的设计更显高，对身材娇小的女生更为友好。注意:对于胸部太大或太小的女生不太友好，可以尝试齐腰衫裙
+                </view>
+                <view>
+                  齐腰衫裙特点:齐腰衫裙灵气满满，裙子的裙腰束在腰收拢身形，显身姿曼妙，裙长至鞋面更显身长适合:对各种身型都非常友好，胖瘦都可以穿相对来说比较显瘦!注意。齐腰衫裙整体偏长，购买的时候要注意裙子长度，不然容易拖地。
+                </view>
+              </scroll-view>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </ant-tabs>
+  </view>
+  <view class="extra">
+    <view class="display-left">
+      <view style="font-weight:bolder;font-size:43rpx;margin-top:20rpx">
+        &nbsp;看看
+      </view>
+      <view style="font-weight:bold;font-size:40rpx;margin-top:10rpx">
+        &nbsp;大家怎么穿
+      </view>
+      <view class="recommend-item">
+        <view class="pic">
+          <image mode="scaleToFill" src="{{images[7]}}" />
+        </view>
+        <view style="padding-left:30rpx;padding-top:15rpx">
+          <view>
+            {{daka[0].title}}
+          </view>
+          <view style="color:grey;font-size:14px;padding-top:10rpx">
+            <icon type="EnvironmentOutline" /> {{daka[0].area}}
+          </view>
+        </view>
+      </view>
+      <view class="recommend-item">
+        <view class="pic">
+          <image mode="scaleToFill" src="{{images[8]}}" />
+        </view>
+        <view style="padding-left:30rpx;padding-top:15rpx">
+          <view>
+            {{daka[1].title}}
+          </view>
+          <view style="color:grey;font-size:14px;padding-top:10rpx">
+            <icon type="EnvironmentOutline" /> {{daka[1].area}}
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="display-right">
+      <view class="recommend-item">
+        <view class="pic">
+          <image mode="scaleToFill" src="{{images[9]}}" />
+        </view>
+        <view style="padding-left:30rpx;padding-top:15rpx">
+          <view>
+            {{daka[2].title}}
+          </view>
+          <view style="color:grey;font-size:14px;padding-top:10rpx">
+            <icon type="EnvironmentOutline" /> {{daka[2].area}}
+          </view>
+        </view>
+      </view>
+      <view class="recommend-item">
+        <view class="pic">
+          <image mode="scaleToFill" src="{{images[10]}}" />
+        </view>
+        <view style="padding-left:30rpx;padding-top:15rpx">
+          <view>
+            {{daka[3].title}}
+          </view>
+          <view style="color:grey;font-size:14px;padding-top:10rpx">
+            <icon type="EnvironmentOutline" /> {{daka[3].area}}
+          </view>
+        </view>
+      </view>
+    </view>
+  </view> -->
+  <view class="container" a:for="{{ images }}" a:if="{{ index<7 }}" a:for-item="item">
+    <image mode="widthFix" class="full-screen-image" src="{{item}}"/>
+  </view>
+</view>
+
+<view style="display:{{isLoad}}">
+  <view class="module">
+    <view class="line-left">
+    </view>
+    <view class="title-container">
+      <text class="centered-text">
+        猜您感兴趣
+      </text>
+    </view>
+    <view class="line-right">
+    </view>
+  </view>
+  <view a:for="{{indexArray}}" a:for-item="itemName">
+    <products 
+    prodPic1="{{prodArray[itemName[0]].info_pic}}" pName1="{{prodArray[itemName[0]].pName}}" pId1="{{prodArray[itemName[0]].pId}}"
+    price1="{{prodArray[itemName[0]].price}}" cartIco1="{{cartIco}}" ifShow1="{{showArray[itemName[0]]}}"  
+    prodPic2="{{prodArray[itemName[1]].info_pic}}" pName2="{{prodArray[itemName[1]].pName}}" pId2="{{prodArray[itemName[1]].pId}}"
+    price2="{{prodArray[itemName[1]].price}}" cartIco2="{{cartIco}}" ifShow2="{{showArray[itemName[1]]}}">
+    </products>
+  </view>
+  <view class="text-bottom" onTap="goStore">
+    已经到底啦，去看更多>
+  </view>
+</view>

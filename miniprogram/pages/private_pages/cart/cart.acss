@@ -1,0 +1,82 @@
+.main {
+  padding: 22rpx;
+  height: 1240rpx;
+}
+.prod{
+  width: 100%;
+  height: 310rpx;
+  border: 1rpx solid #bdbdbd91;
+  border-radius: 20rpx;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #ffffff;
+  margin-top: 30rpx;
+}
+.img{
+  width: 35%;
+  display: flex;
+  align-items: center;
+}
+.img image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+.txt{
+  display: flex;
+  height: 60%;
+}
+
+.comp{
+  height: 40%;
+}
+.rad{
+  display: flex;
+  align-items: center;
+  width: 10%;
+}
+
+.completePay{
+  position:fixed;
+  bottom: 0px;
+  background-color: #ffffff;
+  width: 100%;
+  height: 165rpx;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.price{
+  width: 420rpx;
+}
+
+.price text{
+  float: right;
+}
+
+.emitPay{
+  width: 190rpx;
+  height: 95rpx;
+  border-radius: 50px;
+  margin-left: 20rpx;
+}
+
+.stepperCnt{
+  height:90rpx;
+  float:right;
+  margin-right:10rpx;
+  margin-top: 10rpx;
+}
+
+.prodCheck{
+  margin-left:10rpx;
+  border-radius: 28rpx
+}
+.pName{
+  height:62%;
+  width:75%;
+  margin:55rpx 0 0 18rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "ant-popup": "antd-mini/es/Popup/index"
+  },
+  "styleIsolation": "apply-shared",
+  "defaultTitle": "鉴赏之旅",
+  "transparentTitle":"auto",
+  "titleBarColor": "#000000",
+  "backgroundColor": "#FFFFFF"
+}

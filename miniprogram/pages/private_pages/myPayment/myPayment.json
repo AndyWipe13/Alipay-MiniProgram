@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "modal": "antd-mini/es/Modal/index"
+  },
+  "styleIsolation": "apply-shared",
+  "defaultTitle": "我的订单",
+  "pullRefresh": true,
+    "allowsBounceVertical": "YES"
+}

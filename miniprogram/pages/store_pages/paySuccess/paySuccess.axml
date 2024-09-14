@@ -1,0 +1,17 @@
+<view style="width:100%;height:1624rpx;background-color:#FFFFFF">
+  <view class="main">
+    <view class="icon">
+      <icon type="CheckCircleFill"/>
+    </view>
+    <view class="title">
+      购买成功
+    </view>
+    <view class="description">
+      {{countdown}}秒后自动返回至商城页
+    </view>    
+  </view>
+  <view class="backBtn">
+    <button class="toPortal" onTap="toPortal">返回首页</button>
+    <button class="toPayment" onTap="toPayment">继续购买</button>
+  </view>
+</view>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {},
+  "styleIsolation": "shared",
+  "enableInPageRenderInput": "YES",
+  "pullRefresh": false,
+  "allowsBounceVertical": "YES"
+}

@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "grid": "antd-mini/es/Grid/index",
+    "list": "antd-mini/es/List/index",
+    "list-item": "antd-mini/es/List/ListItem/index",
+    "avatar": "antd-mini/es/Avatar/index"
+
+  },
+  "styleIsolation": "shared",
+  "allowsBounceVertical": "YES",
+  "pullRefresh": true
+}

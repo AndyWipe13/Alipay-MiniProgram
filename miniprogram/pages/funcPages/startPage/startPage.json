@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "ant-toast": "antd-mini/es/Toast/index"
+  },
+  "styleIsolation": "apply-shared",
+  "transparentTitle":"auto",
+  "titleBarColor": "#000000"
+}

@@ -1,0 +1,33 @@
+.startPhoto{
+  width: 100%;
+  background-size: cover;
+  background-position:center;
+  height: 100vh;
+  /* background-image: url('/image/start_page.jpg'); */
+}
+
+.skip{
+  width: 160rpx;
+  height: 70rpx;
+  border-radius: 10rpx;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  font-size: 15px;
+}
+
+.fullscreen-image {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 10;
+  position: fixed;
+}
+
+.full-screen-image {
+  width: 100%;
+}

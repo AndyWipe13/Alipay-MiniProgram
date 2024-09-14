@@ -1,0 +1,46 @@
+
+<view style="padding:20rpx">
+  <view class="banner">
+    <text style="font-weight:{{items[0]}}" onTap="getAll">全部</text>
+    <text style="font-weight:{{items[1]}}" onTap="preSend">待发货</text>
+    <text style="font-weight:{{items[2]}}" onTap="preSign">待收货</text>
+    <text style="font-weight:{{items[3]}}" onTap="preRate">待评价</text>
+  </view>
+  <view class="payMent" a:for="{{paymentsArray}}" a:for-item="payment">
+    <view class="top">
+      <view class="img">
+        <image mode="scaleToFill" src="{{payment.info_pic}}" />
+      </view>
+      <view class="inf">
+        <view style="display:flex;flex-wrap:nowrap;margin-top:4%">
+          <view style="width:77%">{{payment.pName}}</view>
+          <text style="font-weight:600">￥{{payment.price}}</text>
+        </view>
+        <view class="specs">
+          x{{payment.cnt}}
+        </view>
+        <view style="margin-left:56.5%">
+          实付款:<text style="font-weight:600">￥{{payment.finalPrice}}</text>
+        </view>
+       
+      </view>
+    </view>
+    <view class="bottom">
+      <button style="margin-left:120rpx"  size="default" type="default" onTap="toPaymentInfo" data-payId='{{payment._id}}'>查看详情</button>
+      <button style="margin-left:100rpx" size="default" type="default" onTap="deletePayment" data-payId='{{payment._id}}' data-status='{{payment.status}}'>删除订单</button>
+    </view>
+  </view>
+  <view style="margin-top:30rpx;text-align:center">
+  {{Content}}
+  </view>
+</view>
+
+<modal
+  title="确定删除吗？"
+  content="删除后无法恢复"
+  visible="{{basicTwoVisible}}"
+  onClose="handleClose"
+  primaryButtonText="确定"
+  secondaryButtonText="取消"
+  onPrimaryButtonTap="handlePrimaryButtonTap"
+  onSecondaryButtonTap="handleSecondaryButtonTap" />

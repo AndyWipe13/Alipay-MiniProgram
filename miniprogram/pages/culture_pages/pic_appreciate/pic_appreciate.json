@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "apprecite-section": "../../../components/appreciate/appreciate"
+  },
+  "styleIsolation": "apply-shared"
+}

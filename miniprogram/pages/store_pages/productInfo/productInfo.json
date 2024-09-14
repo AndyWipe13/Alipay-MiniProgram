@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "stepper":"antd-mini/es/Stepper/index",
+    "ant-popup": "antd-mini/es/Popup/index",
+    "badge": "antd-mini/es/Badge/index",
+    "ant-rate": "antd-mini/es/Rate/index"
+  },
+  "styleIsolation": "shared",
+  "allowsBounceVertical":"NO",
+  "defaultTitle": ""
+}

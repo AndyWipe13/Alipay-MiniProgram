@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "ant-popup": "antd-mini/es/Popup/index"
+  },
+  "styleIsolation": "shared",
+  "defaultTitle": "乐器鉴赏"
+}

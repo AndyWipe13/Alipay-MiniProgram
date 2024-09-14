@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "list": "antd-mini/es/List/index",
+    "list-item": "antd-mini/es/List/ListItem/index",
+    "stepper":"antd-mini/es/Stepper/index"
+  },
+  "styleIsolation": "apply-shared",
+  "defaultTitle": "确认订单"
+}

@@ -1,0 +1,20 @@
+<view class="startPhoto">
+  <view class="fullscreen-image" animation="{{animation}}" hidden={{hidden}} hover-stop-propagation={{true}}>
+    <image style="height:100vh" class="full-screen-image" mode="scaleToFill" src="/image/startPage.jpg" />
+  </view>
+
+
+  <view style="padding: 20rpx;margin-left:72%;margin-top:24%;z-index:20;position:fixed">
+    <button size="default" type="default" class="skip" onTap="skip"
+    style="display: {{isViewVisible ? '' : 'none'}};">跳过</button>
+  </view>
+</view>
+
+<ant-toast
+  style="width:280rpx;height:240rpx"
+  content="当前您的网络情况不佳,正在努力为您加载"
+  visible="{{ showToast }}"
+  type="loading"
+  showMask="{{ false }}"
+  duration="{{ 0 }}"
+  maskCloseable="{{ false }}" />

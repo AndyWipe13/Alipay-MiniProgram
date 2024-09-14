@@ -1,0 +1,3 @@
+<view a:for="{{blogImgs}}" a:for-index="idx" a:for-item="itemName" class="container">
+  <image mode="widthFix" class="full-screen-image" src="{{itemName}}"/>
+</view>

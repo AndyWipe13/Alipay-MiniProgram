@@ -1,0 +1,6 @@
+<view class="page">
+  <view a:for="{{indexArray}}" a:for-index="idx" a:for-item="itemName">
+    <apprecite-section imageUrl1="{{array[itemName[0]].page}}"
+     imageUrl2="{{array[itemName[1]].page}}" dataIndex="{{idx*2}}"></apprecite-section>
+  </view>
+</view>

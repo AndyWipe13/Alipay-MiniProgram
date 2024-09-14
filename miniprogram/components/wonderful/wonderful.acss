@@ -1,0 +1,22 @@
+.custom-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 35rpx;
+  margin-top: 25rpx;
+  height: 33vh;
+}
+
+.image {
+  width: 85%;
+  height: 30vh;
+  border-radius: 50rpx;
+}
+
+.title {
+  margin-top: 12rpx;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color:#563630
+}

@@ -1,0 +1,7 @@
+.page {
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  /* height: 100vh; */
+}

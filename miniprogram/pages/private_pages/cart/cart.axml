@@ -1,0 +1,43 @@
+<view style="padding-top: 25rpx;text-align:center;display:{{hasCart}}">
+  {{Content}}
+</view>
+<scroll-view scroll-y="{{true}}" class="main" onScrollToLower="onScrollToBottom">
+  <view class="prod" a:for="{{myCartArray}}" a:for-item="myCart"  onTap="onTap" a:for-index="idx" data-index="{{idx}}">
+    <view class="rad">
+      <checkbox class="prodCheck" data-index="{{idx}}" onChange="handleChange" checked='{{checked[idx]}}'/>
+    </view>
+    <view class="img">
+      <image mode="scaleToFill" src="{{myCart.info_pic}}" onTap="toProdInfo" data-pId='{{myCart.pId}}'/>
+    </view>
+ 
+    <view style="width:65%">
+      <view class="txt">
+        <view class="pName">{{myCart.pName}}</view>
+        <icon type="CloseOutline" style="float:right;margin:20rpx" onTap="cartRemove" data-pId='{{myCart.pId}}'/>
+      </view>
+      <view class="comp">
+        <text style="margin-top:35%">￥{{(myCart.price)*(myCart.pCnt)}}</text>
+        <stepper defaultValue="{{myCart.pCnt}}" min="{{1}}" inputStyle="width:70rpx" className="stepperCnt" onChange="onTap" />
+      </view>
+    </view>
+  </view>
+</scroll-view>
+
+
+<view class="completePay">
+  <checkbox style="margin-left:40rpx;border-radius:28rpx" onChange="allChecked">全选</checkbox>
+  <view class="price">
+    <text>合计：￥{{price}}</text>
+  </view>
+  <button type="default" class="emitPay" onTap="emitPay" >结算</button>
+</view>
+
+<modal
+  title="确定删除吗？"
+  content="删除后无法恢复"
+  visible="{{basicTwoVisible}}"
+  onClose="handleClose"
+  primaryButtonText="确定"
+  secondaryButtonText="取消"
+  onPrimaryButtonTap="handlePrimaryButtonTap"
+  onSecondaryButtonTap="handleSecondaryButtonTap" />

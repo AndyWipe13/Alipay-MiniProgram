@@ -1,0 +1,79 @@
+<view class="banner">
+  <view class="{{isFinished}}">
+    <view class="main_inf">
+      <view class="img">
+        <image mode="scaleToFill" src="{{paymentInfoPic}}" />
+      </view>
+      <view class="inf">
+        <view style="display:flex;flex-wrap:nowrap">
+          <view style="width:73%">{{pName}}</view>
+          ￥{{price}}
+        </view>
+        <view class="specs">
+          x{{cnt}}
+        </view>
+      </view>
+    </view>
+    <view class="price">
+      <view style="margin-left:6%">订单总价</view>
+      <view style="margin-left:58%">￥{{totalPrice}}</view>
+    </view>
+    <view class="line">
+      <divider/>
+    </view>
+    <view>
+      <view class="recieveInf">
+        <view style="width:260rpx;padding-left:5%">
+          收货信息：
+        </view>
+        <view style="width:390rpx;height:190rpx">
+          {{fullName}}，{{phoneNumber}}，{{address}}
+        </view>
+      </view>
+      <view class="dateInf">
+        <view style="width:260rpx;padding-left:5%">
+          成交时间：
+        </view>
+        <view style="width:390rpx">
+          <text style="float:right;">{{date}}</text> 
+        </view>
+      </view>
+      <view class="status">
+        <view style="width:260rpx;padding-left:5%">
+          订单状态：
+        </view>
+        <view style="width:390rpx">
+          <text style="float:right;">{{status}}</text> 
+        </view>
+      </view>
+      <view class="next">
+        <button size="default" type="default" onTap="goNext" data-payId='{{payment._id}}' class="{{isNxt}}">{{goNxt}}</button>
+      </view>
+    </view>
+  </view>
+</view>
+
+<ant-modal
+visible="{{ rating }}"
+onClose="handleClose" 
+maskStyle="background:white"
+style="width:100%">
+  <view class="rate-main">
+    <view class="top">
+        留下您宝贵的意见吧!
+    </view>
+    <ant-rate
+    characterClassName="star-gradient"
+    characterActiveClassName="star-active-gradient" 
+    allowClear="{{false}}" 
+    allowHalf="{{true}}"
+    value="{{value}}"
+    onChange="handleRateChange"/>
+    <view class="bodyAction">
+      <button type="default" class="commit" onTap="commitRate">提交评价</button>
+      <ant-icon
+        type="CloseCircleOutline"
+        onTap="handleRateClose" />
+    </view>
+  </view>
+</ant-modal>

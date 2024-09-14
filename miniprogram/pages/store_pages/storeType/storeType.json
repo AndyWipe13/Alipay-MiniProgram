@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "products":"/components/product/product",
+    "ant-input": "antd-mini/es/Input/index"
+  },
+  "styleIsolation": "shared",
+  "pullRefresh": true,
+  "allowsBounceVertical": "YES"
+}

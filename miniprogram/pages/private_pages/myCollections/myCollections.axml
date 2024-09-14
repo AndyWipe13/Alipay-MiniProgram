@@ -1,0 +1,27 @@
+<view class="page">
+  
+  <view class="main" a:for="{{collsArray}}" a:for-item="coll">
+    <view class="img">
+      <image mode="scaleToFill" src="{{coll.info_pic}}" />
+    </view>
+    <view class="inf">
+      <view class="pName">
+        <text>{{coll.pName}}</text>
+      </view>
+      <view class="extra">
+        <view>￥{{coll.price}}</view>
+        <button
+          type="default"
+          onTap="toProdInfo"
+          class="round"
+          data-pId='{{coll.pId}}'>
+          查看详情
+        </button>
+      </view>
+    </view>
+
+  </view>
+  <view style="margin-top:20rpx;text-align:center">
+    {{Content}}
+    </view>
+</view>

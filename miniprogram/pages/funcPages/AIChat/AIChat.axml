@@ -1,0 +1,71 @@
+<view class="content-container">
+  <view style="height:50rpx"></view>
+  <view class="chat" style="height:{{chatHeight}}rpx;position:relative">
+         <!-- scroll-into-view={{isonLoad? scrollIntoView+1:scrollIntoView}}-->
+    <scroll-view  scroll-top="{{scrollTop}}" scroll-y="true" style="margin-bottom:2%;margin-left:2%;width:98%;height:{{isViewVisible ? '77%' : '100%'}};">
+      <view  class="scroll-view-content">
+        <view >
+          <view style="font-weight: bold;color:rgb(172,146,110)">
+            小华同学
+          </view>
+          <view class="message">
+            <view class="innerMessage">
+              你好，亲爱的支付宝用户，我是小华同学，有任何关于传统文化的问题都可以问我噢。
+            </view>
+          </view>
+        </view>
+        <view a:for="{{chat}}" a:for-item="chat" a:for-index="idx" id="{{idx}}"style="margin-bottom:20rpx;">
+          <view a:if="{{chat.role === 'assistant'}}" style="margin-top:2%;color:rgb(172,146,110)" >
+            <view style="font-weight: bold;">
+              小华同学
+            </view> 
+            <view a:if="{{chat.role === 'assistant'}}" class="assistant">
+              <view style="background-color: rgba(255,255,255,0.5);color:rgb(172,146,110)">
+                {{chat.content}}
+              </view>
+            </view>
+          </view>
+          <view a:elif="{{chat.role === 'user'}}"  style="position:relative;;margin-top:2%;color:rgb(172,146,110);">
+            <view style="font-weight: bold;text-align:right;margin-right:20rpx">
+              You
+            </view> 
+            <view style="width:100%;height:100%;text-align:right">
+              <view a:if="{{chat.role === 'user'}}" class="user">
+                <view style="background-color: rgba(255,255,255,0.5);color:rgb(172,146,110);text-align: left">
+                  {{chat.content}}
+                 </view>
+              </view>
+            </view>
+          </view>
+    
+        </view>
+  
+        <view style="display:{{isonLoad ? 'block' : 'none'}};margin-bottom:2%;"  id={{scrollIntoView+1}}>
+          <view  style="font-weight: bold;margin-top:3%;color:rgb(172,146,110)" >
+            小华同学
+          </view>
+          <view class="loading">
+            <view style="background-color: rgba(255,255,255,0.5);color:rgb(172,146,110)">
+              正在努力探索...
+            </view>
+          </view>
+        </view>
+      </view>
+     
+    </scroll-view>
+
+    <view class="tips" style="display: {{isViewVisible ? '' : 'none'}};bottom:0rpx;position:absolute">
+      <button size="30rpx" type="default" onTap="tips" data-index=0>{{tips[0]}}</button>
+      <button size="default" type="default" onTap="tips" data-index=1>{{tips[1]}}</button>
+    </view>
+  </view>
+
+
+    <view class="send">
+      <!--<input value="{{question}}" placeholder="探索属于你的文史之旅" onInput="handleInput"></input>--> 
+        <textarea auto-height="true" placeholder="探索属于你的文史之旅" onInput="handleInput" value="{{question}}"  maxlength=-1 enableNative="{{false}}" ></textarea>
+        <button style="color:rgb(172,146,110); overflow: auto;"onTap="toPaymentInfo">探索</button>
+    </view>
+
+
+</view>

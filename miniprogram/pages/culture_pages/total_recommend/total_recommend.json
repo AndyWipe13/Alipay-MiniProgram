@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "wonderful-section": "/components/wonderful/wonderful"
+  },
+  "styleIsolation": "apply-shared"
+  
+}

@@ -1,0 +1,71 @@
+.page{
+  padding: 5rpx 20rpx 0;
+  padding-bottom: 8%;
+}
+.main{
+  border-radius: 30rpx;
+  height: 360rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1rpx solid #bdbdbd91;
+  margin-top: 50rpx;
+}
+
+.img image{
+  width: 300rpx;
+  height: 300rpx;
+  border-radius: 30rpx;
+}
+
+.img{
+  height: 100%;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inf{
+  height: 100%;
+  width: 55%;
+}
+
+.extra{
+  width: 100%;
+  height: auto;
+}
+
+.extra view{
+  padding-left:30rpx;
+  width:180rpx;
+}
+
+.extra button{
+  border-radius: 50px;
+  width: 220rpx;
+  height: 80rpx;
+  float: right;
+  margin-right: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pName{
+  width: 340rpx;
+  height: 120rpx;
+  padding: 40rpx 10rpx 40rpx 35rpx;
+}
+.pName text{
+  width: 340rpx;
+  height: 120rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.round{
+  margin-top: 20rpx;
+}

@@ -1,0 +1,136 @@
+.recommendImgs{
+  width: 100%;
+  height: 420rpx;
+}
+
+.img-style {
+  width: 100%;
+  height: 420rpx;
+}
+
+.banner{
+  width: 100%;
+  height: 150rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  margin-top: 20rpx;
+}
+
+page{
+  background: #FAF8F6;
+}
+
+.zone-banner{
+  height:140rpx;
+  width:100%;
+  display:flex;
+  flex-flow:column;
+  justify-content:center;
+  align-items:center
+}
+.zone{
+  margin-top:20rpx;
+  width:100%;
+  background-color:#fff;
+}
+
+.zone-new{
+  width: 100%;
+  height: 320rpx;
+  background-color: #ECECEC;
+  display: flex;
+}
+
+.zone-new-image{
+  height: 320rpx;
+  width: 370rpx;
+}
+.productType{
+  font-size: 15px;
+  color: #A9A9A9;
+}
+.productInf{
+  padding:30rpx;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around
+}
+.search-bar {
+  padding: 4px 10rpx 4px 30rpx;
+  border-radius: 100rpx;
+  border: 1rpx solid #ccc;
+  flex: 1;
+  width: 100%;
+  height: 60rpx;
+}
+.search-bar-focus {
+  border-color: #f2be14;
+}
+
+.search-input{
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.allProd{
+  padding: 50rpx 50rpx 0 50rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 1400rpx;
+}
+
+.product{
+  width: 45%;
+  height: 410rpx;
+  border-radius: 15rpx;
+  background: #ffffff;
+}
+
+.product text{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 280rpx;
+  text-align: center;
+}
+
+.pName{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 10rpx 10rpx 0 10rpx;
+  font-size: 14px;
+}
+
+.prod-pic{
+  width: 100%;
+  height: 260rpx;
+  border-top-right-radius: 14rpx;
+  border-top-left-radius: 14rpx;
+}
+
+.cart-icon{
+  width:40rpx;
+  height:40rpx;
+  float:right;
+  margin-right:20rpx;
+}
+
+.main{
+  width: 100%;
+  height:auto;
+  padding-bottom: 8%;
+}
+
+.toast{
+  background-color: #302f2fb0;
+  width: 400rpx;
+}

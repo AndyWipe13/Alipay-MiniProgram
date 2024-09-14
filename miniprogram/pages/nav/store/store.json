@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "ant-input": "antd-mini/es/Input/index",
+    "selector": "antd-mini/es/Selector/index",
+    "products":"/components/product/product"
+  },
+  "styleIsolation": "shared",
+  "enableInPageRenderInput": "YES"
+}

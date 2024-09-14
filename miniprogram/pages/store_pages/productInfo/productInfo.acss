@@ -1,0 +1,229 @@
+.main{
+  height: 100%;
+}
+.preview{
+  width: 100%;
+  background-color: #ffffff;
+}
+.img{
+  height: 860rpx;
+}
+.img image{
+  width: 100%;
+  height: 860rpx;
+}
+.preview-info{
+  height: 220rpx;
+  display: flex;
+  flex-direction: column;
+}
+.pName{
+  padding: 20rpx 30rpx 0 30rpx;
+  font-size: 30rpx;
+  font-weight: 700;
+}
+.price{
+  height: 25%;
+  padding: 30rpx 0 0 30rpx;
+  font-size: 35rpx;
+  font-weight: bolder;
+  color: #CBC062;
+}
+
+.completePay{
+  position:fixed;
+  bottom: 0px;
+  background-color: #ffffff;
+  width: 100%;
+  height: 10%;
+  display: flex;
+}
+.completePay image{
+  width: 45rpx;
+  height: 45rpx;
+}
+.cart-collect{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30rpx;
+  font-size: 11px;
+}
+
+.collect{
+  width: 100rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30rpx;
+
+}
+
+.cart{
+  width: 100rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40rpx;
+}
+.pay{
+  display: flex;
+  align-items: center;
+  padding-left: 40rpx;
+  padding-bottom: 30rpx;
+}
+.pay button{
+  width: 210rpx;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 500;
+  border: none;
+}
+
+.rate{
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: column;
+  height: 120rpx;
+  padding-left: 20rpx;
+  justify-content: space-around;
+}
+
+.rate-main{
+  width: 94%;
+}
+.description{
+  float: right;
+  color: #96969691;
+  font-size: 25rpx;
+  padding-top: 10rpx;
+}
+
+.centered-text {
+  font-size: 28rpx;
+  color: #333;
+}
+
+.module {
+  display: flex;
+  height: 80rpx;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30rpx;
+  justify-content: center;
+  background: #ffffff;
+  flex-direction: row;
+}
+.title-container{
+  padding: 0 20rpx 0 20rpx;
+}
+
+.line-left{
+  height: 3rpx;
+  width: 200rpx;
+  background: linear-gradient(to left,#5f5f5f,#ffffff)
+}
+
+.line-right{
+  height: 3rpx;
+  width: 200rpx;
+  background: black;
+  background: linear-gradient(to right, #5f5f5f, #ffffff); 
+}
+
+.rounded-rectangle {
+  width: auto; /* 圆角矩形的宽度 */
+  height: 60rpx; /* 圆角矩形的高度 */
+  padding-left: 60rpx;
+  padding-right: 60rpx;
+  background-color: #ffffff; /* 圆角矩形的背景颜色 */
+  border-radius: 30rpx; /* 圆角半径 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5rpx solid #e0e0e0;
+}
+
+.infoImgs{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40rpx;
+}
+
+.imgs{
+  width: 95%;
+  height: 900rpx;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.imgs image{
+  width: 700rpx;
+  height: 900rpx;
+  align-items: center;
+}
+
+.star-gradient {
+  background-image: linear-gradient(to right, #979797, #ffffff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.star-active-gradient {
+  background-image: linear-gradient(to bottom, #f2c510, #e4b97c);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+
+.preImg{
+  width: 35%;
+  display: flex;
+  align-items: center;
+}
+.preImg image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+.exit{
+  width: 430rpx;
+  height: 60%;
+}
+
+.comp{
+  height: 40%;
+}
+
+.basicInfo{
+  padding:12px;
+  display:flex;
+  flex-wrap: nowrap;
+}
+
+.addCart{
+  width: 250rpx;
+  height: 95rpx;
+  border-radius: 50px;
+  background-color: #BFA66D;
+  color: #ffffff;
+}
+.submit{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,277 @@
+.header {
+  height: 730rpx;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.header-main{
+  padding: 24% 0 0 89%;
+  display: flex;
+  font-weight: 700;
+}
+.line{
+  height: 250rpx;
+  border: 1rpx solid;
+  margin-right: 10rpx;
+}
+page{
+  background-size: cover;
+  width: 100%;
+  background: #FAF8F6;
+  padding-bottom: 20rpx;
+}
+.func-icon{
+  display: flex;
+  align-items: center;
+  height: 70rpx;
+}
+.func-icon image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.function-icons{
+  margin: 30rpx 20rpx 20rpx 20rpx;
+  height: 170rpx;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 20rpx;
+  color: #563630;
+}
+.function-icons image{
+  width: 90rpx;
+  height: 90rpx;
+}
+.iconItem{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:100%
+}
+.iconTitle{
+  display:flex;
+  justify-content:center;
+  width:100%;
+  font-size:14px;
+  margin-top: 20rpx;
+}
+
+.main-section{
+  padding: 20rpx;
+}
+
+.appreciate-section{
+  background: #ffffff;
+  border-radius: 20rpx;
+  padding: 0 0 20rpx 20rpx;
+}
+.more{
+  font-size:24px;
+  height:80rpx;
+  align-items:center;
+  display:flex;
+  color: #BA9658;
+}
+.dot{
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+}
+.appreciate-header{
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+  width: 100%;
+}
+.header-title{
+  width:89%;
+  height:80rpx;
+  align-items:center;
+  display:flex;
+  font-size:20px;
+  color: #563630;
+  font-weight: 700;
+}
+.appreciate-images{
+  width: 99%;
+  height: 780rpx;
+  position: relative;
+}
+
+.appreciate-image {
+  width: 320rpx;
+  height: 380rpx;
+  display: inline-block;
+  position: absolute;
+}
+
+.appreciate-image:nth-child(1){
+  top: 0;
+  left: 0;
+}
+.appreciate-image:nth-child(2){
+  top: 0;
+  right: 0;
+}
+.appreciate-image:nth-child(3){
+  bottom: 0;
+  left: 0;
+}
+.appreciate-image:nth-child(4){
+  bottom: 0;
+  right: 0;
+}
+
+.imageItem {
+  width: 300rpx;
+  height: 300rpx;
+  border-radius: 10rpx;
+}
+
+.video-section{
+  margin-top: 30rpx;
+  background: #ffffff;
+  border-radius: 20rpx;
+  padding: 0 20rpx 20rpx 20rpx;
+}
+
+.video-header{
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+  width: 100%;
+}
+
+.video-images{
+  white-space: nowrap;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.video-image {
+  width: 520rpx;
+  height: 330rpx;
+  
+}
+
+.videoItem {
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;
+}
+.video-title{
+  padding: 10rpx;
+  font-size: 18px;
+  color: #563630;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 700;
+}
+
+.video-main{
+  border-radius:20rpx;
+  width:520rpx;
+  margin-right: 15rpx;
+  display: inline-block;
+  height:400rpx
+}
+
+.blog-section{
+  margin-top: 30rpx;
+}
+.blog-title{
+  width:100%;
+  height:80rpx;
+  align-items:center;
+  display:flex;
+  padding-left: 10rpx;
+  font-size:20px;
+  color: #563630;
+  font-weight: 700;
+}
+
+.blog-main{
+  height: 1000rpx;
+  background: #ffffff;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+.blog-item{
+  height: auto;
+  padding: 10rpx;
+  background: #ffffff;
+  border-radius: 20rpx;
+  padding: 20rpx;
+  margin-top: 20rpx;
+}
+
+.blog-images{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20rpx;
+}
+.blog-images image{
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 20rpx;
+}
+.info-left{
+  flex: 1;
+  display: flex;
+  line-height: 50rpx;
+}
+
+.info-image{
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.AI-section{
+  padding:40rpx;
+  border-radius:20rpx;
+  display:flex;
+  background:#ffffff;
+  height:270rpx
+}
+
+.AI-column{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around
+}
+
+.goChat{
+  background: #936363;
+  color: #ffffff;
+  width:300rpx;
+  height:80rpx;
+  border-radius:10rpx;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+
+.iconView {
+  z-index: 2;
+  position: fixed;
+  top: 180rpx;
+  right: 10rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.icon {
+  position: absolute;
+  top: 0rpx; /* 根据需要调整距离顶部的距离 */
+  right: 0rpx; /* 根据需要调整距离右侧的距离 */
+  width: 80rpx; /* 根据需要调整图片宽度 */
+  height: 80rpx; /* 根据需要调整图片高度 */
+}

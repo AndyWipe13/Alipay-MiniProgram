@@ -1,0 +1,55 @@
+<view class="page">
+  <view class="container">
+    <image mode="widthFix" class="full-screen-image" src="{{images[0]}}">
+    </image>
+  </view>
+  <view style="margin-top:20rpx">
+    <view style="text-align:center;margin-top:10rpx">
+      <text style="font-size:65rpx;font-weight:bolder">{{title}}</text>
+    </view>
+    <view style="text-align:right;margin-right:30%;margin-top:10rpx">
+      <text style="font-size:40rpx;font-weight:bold">--{{author}}</text>
+    </view>
+    <view a:for="{{ content }}" a:for-item="itemName">
+      <view style="text-align:center;margin-top:10rpx">
+        <text style="font-size:50rpx;">{{itemName}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="center" style="margin-top:20rpx">
+    <image mode="aspectFit" class="centered-image" sytle="width: 300rpx;" default-source="{{images[9]}}" src="{{photofile}}" />
+  </view>
+  <view class="interval" style="display: flex; flex-direction: row;">
+    <button type="ghost" class="bottonstyle" style="flex: 1;" onTap="shangchuan">上传</button>
+    <button type="ghost" class="bottonstyle" style="flex: 1;" onTap="daka">打卡</button>
+  </view>
+  <view class="container" a:for="{{ images }}" a:if="{{ index>0&&index<9 }}" a:for-item="item">
+    <image mode="widthFix" class="full-screen-image" src="{{item}}"/>
+  </view>
+</view>
+
+<view style="display:{{isLoad}}">
+  <view class="module">
+    <view class="line-left">
+    </view>
+    <view class="title-container">
+      <text class="centered-text">
+        猜您感兴趣
+      </text>
+    </view>
+    <view class="line-right">
+    </view>
+  </view>
+  <view a:for="{{indexArray}}" a:for-item="itemName">
+    <products 
+    prodPic1="{{prodArray[itemName[0]].info_pic}}" pName1="{{prodArray[itemName[0]].pName}}" pId1="{{prodArray[itemName[0]].pId}}"
+    price1="{{prodArray[itemName[0]].price}}" cartIco1="{{cartIco}}" ifShow1="{{showArray[itemName[0]]}}"  
+    prodPic2="{{prodArray[itemName[1]].info_pic}}" pName2="{{prodArray[itemName[1]].pName}}" pId2="{{prodArray[itemName[1]].pId}}"
+    price2="{{prodArray[itemName[1]].price}}" cartIco2="{{cartIco}}" ifShow2="{{showArray[itemName[1]]}}">
+    </products>
+  </view>
+  <view class="text-bottom" onTap="goStore">
+    已经到底啦，去看更多>
+  </view>
+</view>
+

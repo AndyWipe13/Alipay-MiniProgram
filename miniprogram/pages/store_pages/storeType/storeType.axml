@@ -1,0 +1,26 @@
+<view class="banner">
+  <view class="search-input">
+    <ant-input
+      placeholder="搜索你感兴趣的商品吧"
+      onChange="handleSeach"
+      className="search-bar"
+      focusClassName="search-bar-focus"
+      confirm-type="search"
+      onConfirm="searchByName"
+      allowClear="true"
+      value = "{{searchValue}}">
+      <icon slot="suffix" type="SearchOutline"/>
+    </ant-input>
+  </view>
+</view>
+
+<scroll-view class="main">
+  <view a:for="{{indexArray}}" a:for-item="itemName">
+    <products 
+    prodPic1="{{array[itemName[0]].info_pic}}" pName1="{{array[itemName[0]].pName}}" pId1="{{array[itemName[0]].pId}}"
+    price1="{{array[itemName[0]].price}}" cartIco1="{{cartIco}}" ifShow1="{{showArray[itemName[0]]}}"  
+    prodPic2="{{array[itemName[1]].info_pic}}" pName2="{{array[itemName[1]].pName}}" pId2="{{array[itemName[1]].pId}}"
+    price2="{{array[itemName[1]].price}}" cartIco2="{{cartIco}}" ifShow2="{{showArray[itemName[1]]}}">
+    </products>
+  </view>
+</scroll-view>

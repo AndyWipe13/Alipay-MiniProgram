@@ -1,0 +1,55 @@
+.userInfo{
+  width: 100%;
+  height: 240rpx;
+  background-color: #ffffff;
+  border:1px solid black;
+}
+
+.userRegist{
+  width: auto;
+  border:none
+}
+
+.private-main{
+  height: auto;
+  padding: 28rpx;
+  color: #333333;
+  display:'{{registButt}}'
+}
+
+.extra{
+  border-radius: 30px;
+}
+
+.toast{
+  background-color: #000000;
+}
+
+.private-info{
+  width: 100%;
+  height: 200rpx;
+  background: url("/image/background.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.overlay{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.avatar{
+  padding: 50rpx 20rpx 50rpx 30rpx;
+}
+
+.avatar image{
+  border-radius: 50%;
+}
+
+.control-regist{
+  display: none;
+}

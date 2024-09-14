@@ -1,0 +1,29 @@
+<view class="title">
+  <image mode="scaleToFill" src="{{background}}" />
+</view>
+<view class="funcItems">
+  <view onTap="sortTime" class="item" style="color:{{timeColor}}">
+    时间<icon type="{{timeIcon}}"/>
+  </view>
+  <view onTap="sortName" class="item" style="color:{{nameColor}}">
+    名称<icon type="{{nameIcon}}"/>
+  </view>
+  <view onTap="sortPrice" class="item" style="color:{{priceColor}}">
+    价格<icon type="{{priceIcon}}"/>
+  </view>
+</view>
+<view class="productItem">
+  <view class="product" a:for="{{ productList }}" a:for-item="product" onTap="navigateToProdInfo" data-pId="{{product.pId}}">
+    <view style="padding:20rpx">
+      <image mode="scaleToFill" src="{{product.info_pic}}" class="productImage"/>
+    </view>
+    <view style="padding:10rpx">
+      <view style="height:120rpx">
+        {{product.pName}}
+      </view>
+      <view>
+        ￥{{product.price}}
+      </view>
+    </view>
+  </view>
+</view>

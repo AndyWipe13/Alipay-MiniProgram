@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "modal": "antd-mini/es/Modal/index",
+    "divider": "antd-mini/es/Divider/index",
+    "ant-modal": "antd-mini/es/Modal/index",
+    "ant-icon": "antd-mini/es/Icon/index",
+    "ant-rate": "antd-mini/es/Rate/index"
+  },
+  "styleIsolation": "shared",
+  "defaultTitle": "",
+  "allowsBounceVertical":"NO",
+  "pullRefresh": false
+}

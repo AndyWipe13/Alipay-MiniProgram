@@ -1,0 +1,15 @@
+.container {
+  width: 100%;
+  overflow: hidden; 
+  display: flex;
+  align-items: stretch;
+}
+
+.page{
+  padding: 0rpx;
+}
+  
+.full-screen-image {
+  width: 100%;
+  object-fit:cover;
+}

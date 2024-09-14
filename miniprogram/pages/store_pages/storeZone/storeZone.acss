@@ -1,0 +1,34 @@
+.title{
+  width: 100%;
+  border-bottom: 1rpx solid #c6c6c6;
+}
+.title image{
+  width: 100%;
+}
+.funcItems{
+  padding: 20rpx;
+  height: 80rpx;
+  border-bottom: 1rpx solid #c6c6c6;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.productItem{
+  background-color: #ffffff;
+}
+.product{
+  border-bottom: 1rpx solid #c6c6c6;
+  height: 250rpx;
+  display: flex;
+  align-items: center;
+}
+.productImage{
+  width: 210rpx;
+  height: 180rpx;
+}
+.item{
+  width: 30%;
+  text-align: center;
+  
+}

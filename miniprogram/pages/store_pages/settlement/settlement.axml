@@ -1,0 +1,65 @@
+<scroll-view style="padding:20rpx;height:1270rpx" scroll-y="{{true}}">
+  <view class="address">
+    <view class="{{authAddress}}">
+      {{reciever}}
+      {{phoneNumber}}
+    </view>
+    <list radius="true">
+      <list-item arrow="{{arr}}" style="font-weight:700" onTap="getAddress">{{address}}</list-item>
+      <list-item extraBrief="快递">配送方式：</list-item>
+    </list>
+  </view>
+  <view  a:for="{{proArr}}" a:for-item="proArr" a:for-index="idx" data-index="{{idx}}" onTap="prodCnt">
+  <view >
+    <view class="main">
+      <view class="prod-inf">
+        <view class="img">
+          <image mode="scaleToFill" src="{{proArr.imgUrl}}"/>
+        </view>
+        <view class="txt">
+          <text style="height:65%;margin-top:40rpx;width:360rpx">{{proArr.pName}}</text>
+          <text style="height:35%;font-weight:700">￥{{proArr.price}}</text>
+        </view>
+        <view class="comp">
+          <stepper defaultValue={{pCnt[idx]}} min="{{1}}" style="margin-top:90%;" onChange="prodCnt"/>
+        </view>
+      </view>
+      <view class="prod-price">
+        共{{pCnt[idx]}}件 小计：<text style="float:right;font-weight:700">￥{{proArr.price*pCnt[idx]}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="calculate">
+  <view class="banner">
+    商品总价<text style="font-size:30rpx;color:#96969691;margin-left:15rpx">共1种商品</text>
+    <text style="float:right;font-weight:700">￥{{totalPrice}}</text>
+  </view>
+  <container title="优惠券">
+    <view slot="headerRight">
+      暂无可用
+      <icon type="RightOutline"  />
+    </view>
+    <view>
+      合计：<text style="float:right;font-weight:700">￥{{totalPrice}}</text>
+    </view>
+  </container>
+</view>
+</scroll-view>
+
+
+<view class="completePay">
+  <view class="price">
+    应付：<text style="font-weight:700;color:#CBC062">￥{{totalPrice}}</text>
+  </view>
+  <button type="default" class="emitPay" onTap="emitSettlemnet">提交订单</button>
+</view>
+
+<toast
+  content="您还未填写收货信息！"
+  visible="{{haveAddress}}"
+  duration="{{2000}}"
+  showMask="{{false}}"
+  maskCloseable="{{true}}"
+  onClose="handleToastClose"/>

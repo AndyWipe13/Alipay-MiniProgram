@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "ant-tabs": "antd-mini/es/Tabs/index",
+    "ant-icon": "antd-mini/es/Icon/index",
+    "ant-container": "antd-mini/es/Container/index",
+    "ant-divider": "antd-mini/es/Divider/index",
+    "products":"/components/product/product"
+  },
+  "styleIsolation": "shared",
+  "defaultTitle": "笔墨生花"
+}

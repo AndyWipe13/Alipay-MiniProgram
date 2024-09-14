@@ -1,0 +1,65 @@
+{
+  "entryPagePath":"pages/funcPages/startPage/startPage",
+  "pages": [
+    "pages/funcPages/startPage/startPage",
+    "pages/nav/index/index",
+    "pages/nav/store/store",
+    "pages/nav/private/private",
+    "pages/culture_pages/main_creation/instrument/instrument",
+    "pages/culture_pages/main_creation/calligraphy/calligraphy",
+    "pages/culture_pages/main_creation/chess/chess",
+    "pages/culture_pages/main_creation/costume/costume",
+    "pages/culture_pages/main_creation/paint/paint",
+    "pages/culture_pages/ancient_pic/ancient_pic",
+    "pages/culture_pages/total_recommend/total_recommend",
+    "pages/culture_pages/recommends/recommend/recommend",
+    "pages/culture_pages/pic_appreciate/pic_appreciate",
+    "pages/store_pages/productInfo/productInfo",
+    "pages/private_pages/cart/cart",
+    "pages/store_pages/paySuccess/paySuccess",
+    "pages/store_pages/settlement/settlement",
+    "pages/private_pages/myPayment/myPayment",
+    "pages/private_pages/myCollections/myCollections",
+    "pages/private_pages/paymentsInfo/paymentsInfo",
+    "pages/culture_pages/blogs/blog/blog",
+    "pages/funcPages/musicPage/musicPage",
+    "pages/funcPages/AIChat/AIChat",
+    "pages/store_pages/storeType/storeType",
+    "pages/store_pages/storeZone/storeZone"
+  ],
+  "tabBar": {
+    "textColor": "#563630",
+    "selectedColor": "#b9893c",
+    "backgroundColor": "rgb(255,251,242)",
+    "items": [
+      {
+        "pagePath": "pages/nav/index/index",
+        "name": "探索",
+        "icon": "/image/portal.png",
+        "activeIcon": "/image/portal-active.png"
+      },
+      {
+        "pagePath": "pages/nav/store/store",
+        "name": "商品",
+        "icon": "/image/store.png",
+        "activeIcon": "/image/store-active.png"
+      },
+      {
+        "pagePath": "pages/nav/private/private",
+        "name": "个人",
+        "icon": "/image/private.png",
+        "activeIcon": "/image/private-active.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "toast": "antd-mini/es/Toast/index",
+    "icon": "antd-mini/es/Icon/index",
+    "container": "antd-mini/es/Container/index"
+  },
+  "window": {
+    "defaultTitle": "诸华拾遗",
+    "titleBarColor": "#FFFFFF"
+  },
+  "lazyCodeLoading": "requiredComponents"
+}

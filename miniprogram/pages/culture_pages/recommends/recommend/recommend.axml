@@ -1,0 +1,58 @@
+<view class="title">
+  {{title}}
+</view>
+
+<view class="main">
+  <video
+    id="myVideo"
+    src="{{src}}"
+    object-fit="{{video.objectFit}}"
+    direction="{{video.directionWhenFullScreen}}"
+    initial-time="{{0}}"
+    mobilenet-hint-type=3
+    onPlay="onPlay"
+    onPause="onPause"
+    onEnded="onEnded"
+    onError="onPlayError"
+    onTimeUpdate="onTimeUpdate"
+    class="video"
+  />
+</view> 
+
+<view class="preview-title">
+  简介
+</view>
+<view class="{{isHidden}}">
+  {{info}}
+</view>
+<view style="text-align:center;width:100%;color: #878787;display:{{isDisplay}}">
+ <text onTap="allInfo">展开更多<icon type="DownOutline"/></text>
+</view>
+
+<view class="module">
+  <view class="line-left">
+  </view>
+  <view class="title-container">
+    <text class="centered-text">
+      更多推荐
+    </text>
+  </view>
+  <view class="line-right">
+  </view>
+</view>
+
+<view class="more-recommed">
+  <view class="recommed-video" a:for="{{ recommendList }}">
+    <view class="inner-video"  onTap="toPlayOtherVideos" data-index="{{recommendList[index].vId}}">
+      <image mode="scaleToFill" src="{{recommendList[index].img}}" />
+      <view class="video-info">
+        <view style="height:80rpx">
+          {{recommendList[index].title}}
+        </view>
+        <view style="font-size:12px">
+          <text style="color:#797979">去观看</text><icon type="PlayOutline" style="margin-left:5rpx"/>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
